@@ -1,0 +1,18 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+    min-height: 100vh;
+    justify-content: flex-start;
+    padding-top: 1rem;
+  }
+
+@media only screen and (max-width:600px)
+{
+  .blogdiv
+  {
+      margin: 0rem 2.5rem;
+  }
+}

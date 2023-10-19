@@ -1,0 +1,29 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px;
+    min-height: 100vh;
+    justify-content: flex-start;
+    padding-top: 1rem;
+  }
+
+  /* .blogItem {
+    margin: 20px; 
+  } */
+
+  .itemp{
+    margin-top: 2rem;
+  }
+  .blogItemp{
+    max-width: 45vw;
+  }
+  .btn{
+    margin-top: 3px;
+    color: white;
+    background-color: black;
+    padding: 5px 5px;
+    cursor: pointer;
+    border-radius: 6px;
+  }
