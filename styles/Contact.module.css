@@ -1,6 +1,6 @@
 .container{
     max-width: 45vw;
-    margin: auto;
+    margin: 50px auto;
     height: 100vh;
 }
 .h1{
@@ -44,6 +44,6 @@
 @media only screen and (max-width: 600px) {
     .container{
         max-width: 88vw;
-        margin: auto;
+        margin: 50px auto;
     }
 }

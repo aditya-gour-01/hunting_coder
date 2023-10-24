@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import { Inter } from 'next/font/google'
-import styles from '@/styles/Home.module.css'
+import styles from '@/styles/Home.module.css';
+import Link from 'next/link';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -26,17 +27,21 @@ export default function Home() {
           <div>
             <h3 className={styles.blogItem}>How to learn javascript in 2023?</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, dolores.</p>
-            <button className={styles.btn}>Read More</button>
+            {/* <Link href={'blog'}><button className={styles.btn}>Read More</button></Link> */}
+            <Link href='blog'>
+            <button className={styles.btn}>Read More</button></Link>
           </div>
           <div>
-            <h3 className={styles.blogItem}>How to learn javascript in 2023?</h3>
+            <h3 className={styles.blogItem}>How to learn Next.js in 2023?</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, dolores.</p>
-            <button className={styles.btn}>Read More</button>
+            <Link href='blog'>
+            <button className={styles.btn}>Read More</button></Link> 
           </div>
           <div>
-            <h3 className={styles.blogItem}>How to learn javascript in 2023?</h3>
+            <h3 className={styles.blogItem}>How to learn Node.js in 2023?</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, dolores.</p>
-            <button className={styles.btn}>Read More</button>
+            <Link href='blog'>
+            <button className={styles.btn}>Read More</button></Link>
           </div>
         </div>
       </main>

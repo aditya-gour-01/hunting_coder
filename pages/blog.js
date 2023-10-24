@@ -16,8 +16,8 @@ const Blog = (props) => {
   const fetchData = async () => {
     // a fake async api call like which sends
     // 20 more records in 1.5 secs
-    let d = await fetch(`http://localhost:3000/api/blogs/?count=${count + 2}`)
-    setCount(count + 2)
+    let d = await fetch(`http://localhost:3000/api/blogs/?count=${count + 1}`)
+    setCount(count + 1) 
     let data = await d.json()
     setBlogs(data)
   };
@@ -43,7 +43,7 @@ const Blog = (props) => {
             return <div key={blogItem.slug}>
               <Link href={`/blogpost/${blogItem.slug}`}>
                 <h3 className={styles.itemp}>{blogItem.title}</h3></Link>
-              <p className={styles.blogItemp}>{blogItem.content.substr(0, 140)}....</p>
+              <p className={styles.blogItemp}>{blogItem.metadesc.substr(0, 140)}....</p>
               <Link href={`/blogpost/${blogItem.slug}`}><button className={styles.btn}>Read More</button></Link>
             </div>
           })}

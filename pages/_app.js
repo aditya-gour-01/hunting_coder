@@ -5,6 +5,6 @@ export default function App({ Component, pageProps }) {
   return <>
   {/* <div>I am a div</div> */}
     <Navbar/>
- <Component {...pageProps} />
+    <Component {...pageProps} />
  </>
 }
